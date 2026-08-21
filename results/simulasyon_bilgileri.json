@@ -1,0 +1,43 @@
+{
+  "analysis_date": "2026-08-20",
+  "base_seed": 20260820,
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "design": "2x2x2 within-person; 4 groups; 4 fixed scenarios; 8 observations/person",
+  "primary_alpha": 0.025,
+  "notes": [
+    "Etki büyüklükleri pilot veri değil, standartlaştırılmış planlama varsayımlarıdır.",
+    "Güvenilirlik ve davranışsal niyet madde ortalamaları sürekli bileşik puan olarak temsil edilmiştir.",
+    "Kişi içi etkiler katılımcı sabit etkisiyle giderilmiş ve katılımcı kümeli CR1 standart hatalar kullanılmıştır.",
+    "Ürün güven aralığında a ve b tahminlerinin normal örnekleme dağılımları ve sıfır tahmin kovaryansı varsayılmıştır."
+  ],
+  "thresholds": [
+    {
+      "scenario": "Temkinli",
+      "minimum_n_grid": 240,
+      "minimum_per_group": 60,
+      "recruit_with_15pct_loss": 284
+    },
+    {
+      "scenario": "Orta",
+      "minimum_n_grid": 96,
+      "minimum_per_group": 24,
+      "recruit_with_15pct_loss": 116
+    },
+    {
+      "scenario": "İyimser",
+      "minimum_n_grid": 96,
+      "minimum_per_group": 24,
+      "recruit_with_15pct_loss": 116
+    }
+  ],
+  "replication_counts": {
+    "main_n288": 5000,
+    "sample_size_grid": 800,
+    "sensitivity": 1000,
+    "null_checks": 1000,
+    "product_draws_per_replication": 3000
+  }
+}

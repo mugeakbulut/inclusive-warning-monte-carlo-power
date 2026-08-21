@@ -1,0 +1,8 @@
+senaryo,ölçüt,yaklaşık_minimum_tamamlanmış,grup_başına,başlangıç_hedefi_yüzde15_kayıp
+Temkinli,Her dolaylı etki ayrı; alfa=0.05,208,52,248
+Temkinli,Her dolaylı etki ayrı; alfa=0.025,248,62,292
+Temkinli,İki etkinin birlikte tespiti; alfa=0.05,256,64,304
+Temkinli,İki etkinin birlikte tespiti; alfa=0.025,320,80,380
+Orta,Her dolaylı etki ayrı; alfa=0.025,≤96,≤24,≤116
+İyimser,Her dolaylı etki ayrı; alfa=0.025,≤96,≤24,≤116
+
