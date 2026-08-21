@@ -78,10 +78,6 @@ python -m pip install -r requirements-dev.txt
 pytest -q
 ```
 
-## GitHub Pages
-
-Depo ayarlarında `Pages` bölümünü açın. Kaynak olarak ana dalın `/docs` klasörünü seçin. `docs/index.html` sonuç sayfası olarak yayımlanacaktır.
-
 ## Veri notu
 
 Depoda gerçek katılımcı verisi yoktur. Kod yalnızca sentetik veri üretir. Güvenilirlik ve davranışsal niyet, sürekli madde ortalaması puanları olarak modellenmiştir.
