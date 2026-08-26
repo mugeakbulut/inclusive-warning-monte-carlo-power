@@ -1,0 +1,50 @@
+{
+  "analysis_date": "2026-08-26",
+  "base_seed": 20260826,
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "design": "2x2x2 within-person; 4 equal groups; 4 fixed scenarios; 8 observations/person",
+  "primary_model": "participant random intercept plus three uncorrelated random slopes (language, action, focus)",
+  "primary_random_slope_sd": 0.15,
+  "primary_alpha_per_indirect_effect": 0.025,
+  "simplification_rule": [
+    "Remove the random slope with the smallest estimated variance.",
+    "Repeat until the model is nonsingular and converges.",
+    "For exact ties remove focus, then action, then language; always retain random intercept."
+  ],
+  "replication_counts": {
+    "main_n288": 5000,
+    "sample_size_grid": 600,
+    "sensitivity": 1000,
+    "null_checks": 1000,
+    "product_draws_per_replication": 3000
+  },
+  "parallel_workers": 8,
+  "notes": [
+    "Effect sizes and variance components are planning assumptions, not pilot estimates.",
+    "Reliability and behavioral-intention item means are represented as standardized continuous scores.",
+    "Power is the proportion of replications whose Monte Carlo product confidence interval excludes zero.",
+    "The joint sampling covariance of a1, a2 and b is retained using participant-cluster influence functions."
+  ],
+  "thresholds": [
+    {
+      "scenario": "Temkinli",
+      "minimum_n_grid": 272,
+      "minimum_per_group": 68,
+      "recruit_with_15pct_loss": 320
+    },
+    {
+      "scenario": "Orta",
+      "minimum_n_grid": 192,
+      "minimum_per_group": 48,
+      "recruit_with_15pct_loss": 228
+    },
+    {
+      "scenario": "İyimser",
+      "minimum_n_grid": 192,
+      "minimum_per_group": 48,
+      "recruit_with_15pct_loss": 228
+    }
+  ]
+}

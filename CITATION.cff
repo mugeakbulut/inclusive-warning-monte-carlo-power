@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Bu yazılımı kullanırsanız lütfen aşağıdaki kaydı kaynak gösterin."
+title: "WP3 Monte Carlo Mediation Power Analysis"
+type: software
+authors:
+  - family-names: "Akbulut"
+    given-names: "Müge"
+version: 2.0.0
+date-released: 2026-08-26
+abstract: "Rastgele kesişim ve üç ilişkisiz rastgele eğim içeren 2×2×2 tekrarlı ölçümlü aracılık gücü simülasyonu."
+keywords:
+  - Monte Carlo
+  - power analysis
+  - mediation
+  - repeated measures
+  - risk communication

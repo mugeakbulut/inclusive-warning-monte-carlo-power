@@ -1,0 +1,14 @@
+[project]
+name = "inclusive-warning-monte-carlo-power"
+version = "2.0.0"
+description = "Monte Carlo power simulation for a 2x2x2 within-person mediation design"
+requires-python = ">=3.10"
+authors = [{ name = "Müge Akbulut" }]
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<4",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
